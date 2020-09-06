@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://192.168.43.164:5500/"],
+      "matches": ["https://a.impartus.com/vc/*"],
       "js": ["content.js"]
     }
   ],

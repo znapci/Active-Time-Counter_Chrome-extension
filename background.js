@@ -3,7 +3,7 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
     chrome.declarativeContent.onPageChanged.addRules([{
       conditions: [new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: {hostEquals: '192.168.43.164'},
+        pageUrl: {urlMatches: 'https://a.impartus.com/vc/'},
       })
       ],
           actions: [new chrome.declarativeContent.ShowPageAction()]
