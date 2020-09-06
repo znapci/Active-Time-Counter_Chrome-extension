@@ -9,7 +9,7 @@ and as a bonus it has a counter to display active time.
 #### As of now only opera browser supports loading external extension(afaik).
 
 ## Installation
-1. Download a release from [Github Releases](https://github.com/znapci/Active-Time-Counter_Chrome-extension/releases/download/v0.1/ext.crx)
+1. Download a release from [Github Releases](https://github.com/znapci/Active-Time-Counter_Chrome-extension/releases/download/release/ext.crx)
 2. Head over to Chrome extensions located at: chrome://extensions 
 #### for opera its about://extensions
 3. Enable developer mode
