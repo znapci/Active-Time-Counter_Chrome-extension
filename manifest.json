@@ -1,7 +1,7 @@
 {
-  "name": "acivity ",
+  "name": "Active Time Counter",
   "version": "1.0",
-  "description": "Force activate a background tab",
+  "description": "Displays active time on a page.",
   "permissions": ["declarativeContent"],
   "background": {
     "scripts": ["background.js"],
