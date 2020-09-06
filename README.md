@@ -6,8 +6,8 @@ this extension makes it easier for us to know if we are active or not(icon turns
 and as a bonus it has a counter to display active time.
 ## Feel free to fork,commit,PR
 ## Note:
-#### As of now only opera browser supports loading external extension(afaik).
-
+### Linux user? go ahead and use chrome  
+#### for windows users as of now only opera browser supports loading external extensions(afaik).
 ## Installation
 1. Download a release from [Github Releases](https://github.com/znapci/Active-Time-Counter_Chrome-extension/releases/download/release/ext.crx)
 2. Head over to Chrome extensions located at: chrome://extensions 
