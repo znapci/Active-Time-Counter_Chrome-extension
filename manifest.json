@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://0.0.0.0:8000"],
+      "matches": ["http://192.168.43.164:5500/"],
       "js": ["content.js"]
     }
   ],

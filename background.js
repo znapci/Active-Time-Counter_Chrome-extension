@@ -3,7 +3,7 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
     chrome.declarativeContent.onPageChanged.addRules([{
       conditions: [new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: {hostEquals: '0.0.0.0'},
+        pageUrl: {hostEquals: '192.168.43.164:5500'},
       })
       ],
           actions: [new chrome.declarativeContent.ShowPageAction()]
@@ -12,7 +12,7 @@ chrome.runtime.onInstalled.addListener(function() {
 });
 });
 chrome.runtime.onMessage.addListener(
-  function(request, sender) {
+  function(request, sender, sendResponse) {
     console.log(sender.tab ?
                 "from a content script:" + sender.tab.url :
                 "from the extension");
@@ -27,16 +27,18 @@ chrome.runtime.onMessage.addListener(
       "48": "images/inactive/icon48.png",
       "128": "images/inactive/icon128.png"
     }}); 
+    sendResponse({msg: "blurred"});
   }
-  if (request.event == "focused"){
+  else if (request.event == "focused"){
     chrome.pageAction.setIcon({
       tabId:tabId,
       path: {
-    "16": "images/inactive/icon.png",
-    "32": "images/inactive/icon32.png",
-    "48": "images/inactive/icon48.png",
-    "128": "images/inactive/icon128.png"
+    "16": "images/active/icon.png",
+    "32": "images/active/icon32.png",
+    "48": "images/active/icon48.png",
+    "128": "images/active/icon128.png"
   }}); 
+  sendResponse({msg: "focused"});
   }
   });
 /*
