@@ -1,7 +1,7 @@
 {
-  "name": "Active Time Counter",
+  "name": "Impartus Active Time Counter",
   "version": "1.0",
-  "description": "Displays active time on a page.",
+  "description": "Displays active time & status indicator on impartus vc.",
   "permissions": ["declarativeContent"],
   "background": {
     "scripts": ["background.js"],
