@@ -1,6 +1,6 @@
 {
   "name": "Impartus Active Time Counter",
-  "version": "1.0",
+  "version": "0.1",
   "description": "Displays active time & status indicator on impartus vc.",
   "permissions": ["declarativeContent"],
   "background": {
