@@ -2,7 +2,7 @@
   "name": "acivity ",
   "version": "1.0",
   "description": "Force activate a background tab",
-  "permissions": ["tabs","declarativeContent"],
+  "permissions": ["declarativeContent"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false

@@ -27,6 +27,7 @@ window.onfocus = function() {
     });
 
 }
+startCounter();
 /*
 var inFocus = true;  // global boolean to keep track of state
 chrome.windows.onFocusChanged.addListener(function(window) {
