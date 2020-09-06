@@ -3,6 +3,7 @@ var interval;
 function timerHandler() {
     secs++;
    }
+
 function startCounter() {
     interval = window.setInterval(timerHandler, 1000);
 }
