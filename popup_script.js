@@ -5,6 +5,9 @@ chrome.runtime.onConnect.addListener(function(port) {
     port.onMessage.addListener(function(msg) {
         var secs;
         secs = msg.time;
-        document.getElementById("jkhgfID").innerHTML = secs;
+        var mins = Math.floor(secs / 60);
+        var seconds = secs-mins*60;
+        document.getElementById("jkhgfID").innerHTML = seconds;
+        document.getElementById("ldhrhnz").innerHTML = mins;
     });
   });
