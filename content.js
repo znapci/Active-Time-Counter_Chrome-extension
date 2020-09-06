@@ -2,8 +2,6 @@ var secs = 0;
 var interval = 0;
 function timerHandler() {
     secs++;
-    var port = chrome.runtime.connect({name: "time"});
-    port.postMessage({time: secs});
     }
 
 function startCounter() {
@@ -17,6 +15,8 @@ window.onblur = function() {
     chrome.runtime.sendMessage({event: "blurred"}, function(response) {
         console.log(response.msg);
         stopCounter();
+        var port = chrome.runtime.connect({name: "time"});
+        port.postMessage({time: secs});
       });
 
 }
