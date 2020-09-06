@@ -28,6 +28,16 @@ chrome.runtime.onMessage.addListener(
       "128": "images/inactive/icon128.png"
     }}); 
   }
+  if (request.event == "focused"){
+    chrome.pageAction.setIcon({
+      tabId:tabId,
+      path: {
+    "16": "images/inactive/icon.png",
+    "32": "images/inactive/icon32.png",
+    "48": "images/inactive/icon48.png",
+    "128": "images/inactive/icon128.png"
+  }}); 
+  }
   });
 /*
 chrome.pageAction.onClicked.addListener(function(tab) {

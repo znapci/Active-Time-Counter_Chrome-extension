@@ -1,6 +1,11 @@
 window.onblur = function() {
-    chrome.runtime.sendMessage({event: "blurred"}, function(callback) {
+    chrome.runtime.sendMessage({event: "blurred"}, function() {
       });
+}
+window.onfocus = function() {
+    chrome.runtime.sendMessage({event: "focused"}, function(){
+        
+    });
 }
 /*
 var inFocus = true;  // global boolean to keep track of state
