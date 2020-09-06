@@ -10,7 +10,8 @@ and as a bonus it has a counter to display active time.
 
 ## Installation
 1. Download a release from [Github Releases](https://github.com/znapci/Active-Time-Counter_Chrome-extension/releases/download/v0.1/ext.crx)
-2. Head over to Chrome extensions located at: chrome://extensions
+2. Head over to Chrome extensions located at: chrome://extensions 
+#### for opera its about://extensions
 3. Enable developer mode
 4. Drag and drop the downloaded file to extensions page
 5. Thats all!
