@@ -1,4 +1,4 @@
-# Active-Time-Counter_Chrome-extension
+# Impartus-Active-Time-Counter_Chrome-extension
 Displays active status & time in Impartus Virtual Classroom.
 
 ## Disclaimer: JUST A FUN PROJECT
