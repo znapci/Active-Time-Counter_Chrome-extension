@@ -1,3 +1,4 @@
+## Impartus version [here](https://github.com/znapci/Active-Time-Counter_Chrome-extension/tree/Impartus)
 # Active-Time-Counter_Chrome-extension
 ##### Displays active time on a website with status indicator.
 
